@@ -1,0 +1,457 @@
+/*
+Theme Name: WSU CMEC - Clean Technologies
+Theme URI: http://web.wsu.edu/spine
+Author: WSU University Communications
+Author URI: http://web.wsu.edu, http://ucomm.wsu.edu
+Description: A child theme of the WSU Web Communications Spine template, used for Clean Tehcnologies CMEC.
+Template: spine
+Version: 0.5
+License: Copyright Washington State University
+License URI: http://copyright.wsu.edu
+Tags: light
+*/
+
+/* ***********************************************************************
+**************************************************************************
+ ____    __    ____   _______. __    __ 
+ \   \  /  \  /   /  /       ||  |  |  |
+  \   \/    \/   /  |   (----`|  |  |  |
+   \            /    \   \    |  |  |  |
+    \    /\    / .----)   |   |  `--'  |
+     \__/  \__/  |_______/     \______/ 
+                                       
+   ("\''/").___..--''"`-._  
+    `9_ 9  )   `-.  (     ).`-.__.`) 
+    (_Y_.)'  ._   )  `._ `. ``-..-' 
+  _..`--'_..-_/  /--'_.' .'          
+(il).-''  ((i).'  ((!.-'
+
+	
+	# Table of contents
+		## Parent DOM alterations
+		## Parent Spine alterations
+		## Define Typography
+		## Standard HTML elements
+			### Headers
+			### Paragraphs
+		## HTML structures
+			### Address
+		## Metro navigation
+	
+
+**************************************************************************
+*********************************************************************** */
+
+/* ***********************************************************************
+**************************************************************************
+
+## Parent DOM alterations
+
+**************************************************************************
+*********************************************************************** */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+html {
+	background-color:#f3f0eb;
+}
+
+/* ***********************************************************************
+**************************************************************************
+
+## Parent Spine alterations
+
+**************************************************************************
+*********************************************************************** */
+.pgbldrhead {
+	margin-left:14px;
+	margin-right:14px;
+	margin-bottom:0;
+}
+.article-header .column {
+	padding-bottom:0;
+}
+.article-title {
+	color: black;
+	font-weight: 400;
+	font-size: 1.5em;
+	margin-bottom:0;
+	padding-bottom:0;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+.main-header {
+	font-size: 3em;
+	max-width:1188px;
+	background-color:transparent;
+	border-bottom:1px solid #323232;
+	margin-bottom:5%;
+}
+.main-header .sub-header-default {
+	display:none;
+}
+.main-header sup:not(.unset) a {
+	color:#323232;
+	font-size:.8em;
+}
+.main-header .header-group:not(.unset) {
+	max-width:1188px;
+	right:0;
+	left:42%;
+}
+/* Before binder Accent parts/before-binder.php */
+.redTrim {
+	background-color:#981e32;
+	height:5px;
+	width:100%;
+}
+#binder {
+	background-color:#faf9f7;
+}
+/* ***********************************************************************
+**************************************************************************
+
+## Define Typography
+
+**************************************************************************
+*********************************************************************** */
+main {
+	font-family: 'OpenSans-CondLight';
+}
+/* ***********************************************************************
+**************************************************************************
+
+## Standard HTML elements
+
+**************************************************************************
+*********************************************************************** */
+
+/* ### Headers
+*********************************************************************** */
+main > h1, h2, h3, h4, .article-title, .main-header {
+	color:black;
+	text-transform: uppercase;
+}
+h2 {
+	font-size:2.2em;
+	color:black;
+	font-weight: 200;
+	margin-bottom:20px;
+	letter-spacing: 0;
+}
+h3 {
+	font-size: 1.6em;
+	text-transform: none;
+	font-weight: 300;
+	padding-top:15px;
+	padding-bottom:8px;
+}
+h3 a {
+	font-weight: 300;
+}
+h4 {
+	margin-top:1.5em;
+}
+.page h2:first-child {
+	padding-top:0;
+}
+.borderedhead h2 {
+	border: 1px solid black;
+	text-align: center;
+}
+/* ### Paragraph
+*********************************************************************** */
+p {
+	line-height: 1.5em;
+	font-size: 130%;
+	vertical-align: baseline;
+	margin-bottom:1em;
+	color:#323232;
+}
+ul,ol {
+	font-size: 115%;
+	color:#323232;
+}
+/* ***********************************************************************
+**************************************************************************
+
+## HTML structures
+
+**************************************************************************
+*********************************************************************** */
+
+/* ### Address
+*********************************************************************** */
+address {
+}
+/* ***********************************************************************
+**************************************************************************
+
+## Helper elements structure
+
+**************************************************************************
+*********************************************************************** */
+.nested-halves {
+	width:100%;
+	display: inline-block;
+	text-align: top;
+	clear: both;
+	padding-top:0;
+	margin-top:0;
+}
+.nested-halves .nested-one {
+	display: block;
+	width:49%;
+	float:left;
+	padding-right:1%;
+}
+.nested-halves .nested-two {
+	display: block;
+	width:49%;
+	float:left;
+	padding-left:1%;
+}
+.nested-thirds {
+	width:100%;
+	display: inline-block;
+	text-align: top;
+	clear: both;
+	padding-top:0;
+	margin-top:0;
+}
+.nested-thirds .nested-one {
+	display: block;
+	width:32%;
+	float:left;
+	padding-right:1%;
+}
+.nested-thirds .nested-two {
+	display: block;
+	width:32%;
+	float:left;
+	padding-right:1%;
+}
+.nested-thirds .nested-three {
+	display: block;
+	width:32%;
+	float:left;
+	padding-right:1%;
+}
+.nested-gutter {
+	padding-left:1%;
+	padding-right:1%;
+}
+#accordion {
+	height:100%;
+}
+#accordion h3 {
+	cursor: pointer;
+	margin-bottom:5%;
+	color:#323232;
+}
+#accordion h3:after {
+	content: "\21E9";
+	padding-left:5%;
+}
+/* ***********************************************************************
+**************************************************************************
+
+## Page specific targeting
+
+**************************************************************************
+*********************************************************************** */
+
+/* ## Homepage /
+*********************************************************************** */
+.home .main-header {
+	height:200px;
+	background-image:url("/wp-content/uploads/sites/2/2014/08/homepage-pullies.jpg");
+	background-repeat:no-repeat;
+	background-position: 0 -125px;
+	margin-bottom:0;
+}
+.home .main-header .header-group:not(.unset) {
+	text-align: center;
+	background-color:rgba(44,44,44,0.4);
+	top:0;
+	left:0;
+	max-width:1188px;
+	width:100%;
+	height:10%;
+	padding-top:8%;
+	padding-bottom:3%;
+	padding-left:0;
+	padding-right:0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(255,255,255,0.4);
+}
+/* ***********************************************************************
+**************************************************************************
+
+### Metro navigation
+**************************************************************************
+*********************************************************************** */
+.metro .column  {
+	height:350px;
+	padding:4%;
+	margin:0;
+	color:#3e3e3e;
+	font-size: 130%;
+	background-size: 100%;
+}
+.metro h3, .metro p {
+	z-index: 200;
+}
+.metro h3 {
+	text-transform: uppercase;
+	border-bottom:1px solid #3e3e3e;
+	margin-bottom:4%;
+	margin-top:-15%;
+}
+.metro p {
+	line-height: 1.4em;
+}
+.metro .one a, .metro .two a {
+	display: block;
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top: 0;
+	left:0;
+	text-indent: -99999px;
+	cursor: pointer;
+	z-index: 100;
+}
+.metro-one .one {
+	background-color:#e1cca6;
+	background-image:url('/wp-content/uploads/sites/2/2014/08/wood-before.gif');
+}
+.metro-one .one:hover{
+	background-image:url('/wp-content/uploads/sites/2/2014/08/wood.gif');
+}
+.metro-one .two {
+	background-color:#d5d5d5;
+	background-image:url('/wp-content/uploads/sites/2/2014/08/structural-before.gif');
+}
+.metro-one .two:hover {
+	background-image:url('/wp-content/uploads/sites/2/2014/08/structural.gif');
+}
+.metro-two .one {
+	background-color:#a6a2a2;
+	background-image:url('/wp-content/uploads/sites/2/2014/08/cementitious-before.gif');
+}
+.metro-two .one:hover {
+	background-image:url('/wp-content/uploads/sites/2/2014/08/cementatious.gif');
+}
+.metro-two .two {
+	background-color:#c3d2bf;
+	background-image:url('/wp-content/uploads/sites/2/2014/08/polymer-before.gif');
+}
+.metro-two .two:hover {
+	background-image:url('/wp-content/uploads/sites/2/2014/08/polymer.gif');
+}
+/**/
+.home .value {
+	max-width:1188px;
+	color:white;
+	background-image:url('/wp-content/uploads/sites/2/2014/08/home-lab.jpg');
+	background-repeat: no-repeat;
+}
+.home .value p {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	color:white;
+}
+.home .value h2, .home .value h3 {
+	color:white;
+}
+.home .value h2 {
+	border:solid 1px white;
+	width:30%;
+	padding-bottom:15px;
+	padding-top:15px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:8%;
+	margin-bottom:4%;
+}
+.home .value h3 {
+	margin-top:15%;
+	margin-bottom:1%;
+	font-size: 140%;
+	font-weight: bold;
+}
+.home .value .nested-halves {
+	margin-left:5%;
+	padding-bottom:5%;
+}
+.home .value .nested-halves .nested-one, .home .value .nested-halves .nested-two {
+	width:35%;
+	padding-left:6%;
+	font-size:1.2em;
+}
+.home .value .nested-halves .nested-one {
+	padding-right:4%;
+}
+.home .value .nested-halves .nested-two {
+	border-left:solid 1px white;
+	padding-left:6%;
+}
+ /* ***********************************************************************
+**************************************************************************
+
+## Assets
+
+**************************************************************************
+*********************************************************************** */
+
+
+ /* ***********************************************************************
+**************************************************************************
+
+## Min/Max 790
+
+**************************************************************************
+*********************************************************************** */
+@media (max-width: 790px) {
+	.main-header .header-group:not(.unset) {
+		max-width:790px;
+		right:0;
+		left:0;
+		font-size: .7em;
+		text-align: right;
+	}
+	.home .metro .column {
+		height:100%;
+	}
+	.home .value {
+		background-size:100%;
+		background-color: #020102;
+		}
+	.home .value h2 {
+		width:100%;
+		margin-top:110%;
+		margin-bottom:20%;
+	}
+	.home .value h3 {
+		margin-top:0;
+		padding-top:0;
+	}
+	.home .main-header .header-group:not(.unset) {
+		background-color:transparent;
+		border-bottom:none;
+	}
+	.home .value .nested-halves .nested-one, .home .value .nested-halves .nested-two {
+		width:95%;
+		padding-left:0%;
+		margin-left:0;
+		padding-top:0;
+		margin-top:0;
+	}
+	.home .value .nested-halves .nested-two {
+		border-left:none;
+	}
+}
