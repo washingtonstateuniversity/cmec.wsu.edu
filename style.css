@@ -160,7 +160,10 @@ main h4 {
 .bordered {
 	border: 1px solid black;
 	text-align: center;
-	padding:.2em;
+	padding:.3em;
+}
+a .bordered {
+	border:1px solid #981e32;
 }
 /* ### Paragraph
 *********************************************************************** */
