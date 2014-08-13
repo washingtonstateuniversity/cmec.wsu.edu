@@ -38,7 +38,7 @@ Tags: light
 			### Address
 		## Metro navigation
 	
-
+Background images are in the WordPress edit CSS
 **************************************************************************
 *********************************************************************** */
 
@@ -93,12 +93,12 @@ html {
 }
 .main-header sup:not(.unset) a {
 	color:#323232;
-	font-size:.8em;
+	font-size:.6em;
 }
 .main-header .header-group:not(.unset) {
 	max-width:1188px;
 	right:0;
-	left:42%;
+	left:55%;
 }
 /* Before binder Accent parts/before-binder.php */
 .redTrim {
@@ -133,43 +133,45 @@ main > h1, h2, h3, h4, .article-title, .main-header {
 	color:black;
 	text-transform: uppercase;
 }
-h2 {
+main h2 {
+	margin-bottom:4%;
 	font-size:2.2em;
 	color:black;
 	font-weight: 200;
 	margin-bottom:20px;
 	letter-spacing: 0;
 }
-h3 {
+main section ~ section h2 {
+	border-bottom:1px solid #3e3e3e;
+}
+main h3 {
 	font-size: 1.6em;
 	text-transform: none;
 	font-weight: 300;
 	padding-top:15px;
 	padding-bottom:8px;
 }
-h3 a {
+main h3 a {
 	font-weight: 300;
 }
-h4 {
+main h4 {
 	margin-top:1.5em;
 }
-.page h2:first-child {
-	padding-top:0;
-}
-.borderedhead h2 {
+.bordered {
 	border: 1px solid black;
 	text-align: center;
+	padding:.2em;
 }
 /* ### Paragraph
 *********************************************************************** */
-p {
+main p {
 	line-height: 1.5em;
 	font-size: 130%;
 	vertical-align: baseline;
 	margin-bottom:1em;
 	color:#323232;
 }
-ul,ol {
+main ul,main ol {
 	font-size: 115%;
 	color:#323232;
 }
@@ -183,7 +185,10 @@ ul,ol {
 
 /* ### Address
 *********************************************************************** */
-address {
+main address {
+}
+main hr {
+	color:black;
 }
 /* ***********************************************************************
 **************************************************************************
@@ -266,9 +271,6 @@ address {
 *********************************************************************** */
 .home .main-header {
 	height:200px;
-	background-image:url("/wp-content/uploads/sites/2/2014/08/homepage-pullies.jpg");
-	background-repeat:no-repeat;
-	background-position: 0 -125px;
 	margin-bottom:0;
 }
 .home .main-header .header-group:not(.unset) {
@@ -298,20 +300,18 @@ address {
 	padding:4%;
 	margin:0;
 	color:#3e3e3e;
-	font-size: 130%;
 	background-size: 100%;
 }
-.metro h3, .metro p {
+.metro h2, .metro p {
 	z-index: 200;
 }
-.metro h3 {
-	text-transform: uppercase;
-	border-bottom:1px solid #3e3e3e;
-	margin-bottom:4%;
+.metro h2 {
+	
 	margin-top:-15%;
 }
 .metro p {
 	line-height: 1.4em;
+	font-size: 1.4em;
 }
 .metro .one a, .metro .two a {
 	display: block;
@@ -324,72 +324,38 @@ address {
 	cursor: pointer;
 	z-index: 100;
 }
-.metro-one .one {
-	background-color:#e1cca6;
-	background-image:url('/wp-content/uploads/sites/2/2014/08/wood-before.gif');
-}
-.metro-one .one:hover{
-	background-image:url('/wp-content/uploads/sites/2/2014/08/wood.gif');
-}
-.metro-one .two {
-	background-color:#d5d5d5;
-	background-image:url('/wp-content/uploads/sites/2/2014/08/structural-before.gif');
-}
-.metro-one .two:hover {
-	background-image:url('/wp-content/uploads/sites/2/2014/08/structural.gif');
-}
-.metro-two .one {
-	background-color:#a6a2a2;
-	background-image:url('/wp-content/uploads/sites/2/2014/08/cementitious-before.gif');
-}
-.metro-two .one:hover {
-	background-image:url('/wp-content/uploads/sites/2/2014/08/cementatious.gif');
-}
-.metro-two .two {
-	background-color:#c3d2bf;
-	background-image:url('/wp-content/uploads/sites/2/2014/08/polymer-before.gif');
-}
-.metro-two .two:hover {
-	background-image:url('/wp-content/uploads/sites/2/2014/08/polymer.gif');
-}
-/**/
-.home .value {
-	max-width:1188px;
-	color:white;
-	background-image:url('/wp-content/uploads/sites/2/2014/08/home-lab.jpg');
-	background-repeat: no-repeat;
-}
 .home .value p {
 	font-size: 1.3em;
 	line-height: 1.3em;
 	color:white;
+	padding-bottom:0;
 }
 .home .value h2, .home .value h3 {
 	color:white;
 }
 .home .value h2 {
-	border:solid 1px white;
+	border-bottom:solid 1px white;
 	width:30%;
 	padding-bottom:15px;
 	padding-top:15px;
 	text-align: center;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:8%;
-	margin-bottom:4%;
+	margin-top:10%;
+	margin-bottom:0;
 }
 .home .value h3 {
 	margin-top:15%;
 	margin-bottom:1%;
-	font-size: 140%;
+	font-size: 130%;
 	font-weight: bold;
 }
 .home .value .nested-halves {
-	margin-left:5%;
-	padding-bottom:5%;
+	margin-left:0%;
+	padding-bottom:15%;
 }
 .home .value .nested-halves .nested-one, .home .value .nested-halves .nested-two {
-	width:35%;
+	width:40%;
 	padding-left:6%;
 	font-size:1.2em;
 }
