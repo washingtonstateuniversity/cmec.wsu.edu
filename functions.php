@@ -2,7 +2,7 @@
 
 // Global version tracker.
 
-include_once( 'includes/home-blog.php' ); // Include shortcode plugin.
+include_once( 'includes/cmec-shortcodes.php' ); // Handle custom shortcodes for CMEC.
 
 add_action( 'wp_enqueue_scripts', 'cleantech_enqueue_scripts' );
 /**
