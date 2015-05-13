@@ -370,7 +370,7 @@ class CMEC_Shortcodes {
 	 *
 	 * @return string HTML output
 	 */
-	public function wmel_project_display() {
+	public function wmel_projects_display() {
 		// Build the output to return for use by the shortcode.
 		ob_start();
 		?>
@@ -497,7 +497,7 @@ class CMEC_Shortcodes {
 		return $content;
 	}
 	/**
-	 * Handle the display of the Polymeric Projects shortcode, which displays a list of
+	 * Handle the display of the Cementatious Projects shortcode, which displays a list of
 	 * 
 	 *
 	 * @return string HTML output
