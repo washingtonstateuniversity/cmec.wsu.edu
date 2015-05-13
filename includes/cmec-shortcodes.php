@@ -414,7 +414,7 @@ class CMEC_Shortcodes {
 	 *
 	 * @return string HTML output
 	 */
-	public function se_project_display() {
+	public function se_projects_display() {
 		// Build the output to return for use by the shortcode.
 		ob_start();
 		?>
@@ -458,7 +458,7 @@ class CMEC_Shortcodes {
 	 *
 	 * @return string HTML output
 	 */
-	public function p_project_display() {
+	public function p_projects_display() {
 		// Build the output to return for use by the shortcode.
 		ob_start();
 		?>
@@ -502,7 +502,7 @@ class CMEC_Shortcodes {
 	 *
 	 * @return string HTML output
 	 */
-	public function cbm_project_display() {
+	public function cbm_projects_display() {
 		// Build the output to return for use by the shortcode.
 		ob_start();
 		?>
