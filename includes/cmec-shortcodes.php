@@ -33,7 +33,7 @@ class CMEC_Shortcodes {
 		<div class="loop">
 			<?php
 			$args = array(
-				'posts_per_page' => 4,
+				'posts_per_page' => 3,
 				'offset'=> 0,
 				'post_type' => 'post',
 				'tax_query' => array(
@@ -75,7 +75,7 @@ class CMEC_Shortcodes {
 		<div class="loop">
 			<?php
 			$args = array(
-				'posts_per_page' => 4,
+				'posts_per_page' => 3,
 				'offset'=> 0,
 				'post_type' => 'post',
 				'tax_query' => array(
@@ -117,7 +117,7 @@ class CMEC_Shortcodes {
 		<div class="loop">
 			<?php
 			$args = array(
-				'posts_per_page' => 4,
+				'posts_per_page' => 3,
 				'offset'=> 0,
 				'post_type' => 'post',
 				'tax_query' => array(
@@ -159,7 +159,7 @@ class CMEC_Shortcodes {
 		<div class="loop">
 			<?php
 			$args = array(
-				'posts_per_page' => 4,
+				'posts_per_page' => 3,
 				'offset'=> 0,
 				'post_type' => 'post',
 				'tax_query' => array(
