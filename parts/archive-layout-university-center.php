@@ -5,7 +5,7 @@ if ( is_post_type_archive( 'wsuwp_uc_person' ) ) {
 	$archive_headline = '';
 }
 ?>
-<header>
+<header class="person-archive-header">
 	<span class="sub-header-default"><?php echo $archive_headline; ?></span>
 </header>
 <section class="row single gutter pad-ends entity-section">
