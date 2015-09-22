@@ -30,7 +30,7 @@
 					<div class="person-office"><?php echo esc_html( $display_data['office'] ); ?></div><?php endif;
 
 				} ?>
-				<?php the_category(' | '); ?>
+				<div class="personnel-category-tags"><?php the_category(' | '); ?></div>
 		</header>
 
 		<div class="article-summary">
