@@ -1,5 +1,7 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( ! is_singular() ) : ?>
+<?php while ( have_posts() ) : the_post(); ?>
+<article class="single-people-section">
+<section class="row side-right gutter pad-ends">
+	<div class="column one">
 		<header class="article-header">
 				<?php
 				if ( has_post_thumbnail() ) {
@@ -23,27 +25,25 @@
 					// If no display name is available, use the title.
 					if ( empty( $display_name ) ) : $display_name = get_the_title(); endif; ?>
 
-					<h2 class="article-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php echo esc_html( $display_name ); ?></a></h2><?php
+					<h3 class="article-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php echo esc_html( $display_name ); ?></a></h3><?php
 
 					if ( ! empty( $display_data['title'] ) ) : ?><div class="person-title"><?php echo esc_html( $display_data['title'] ); ?></div><?php endif;
 					if ( ! empty( $display_data['title_secondary'] ) ) : ?><div class="person-title-secondary"><?php echo esc_html( $display_data['title_secondary'] ); ?></div>
 					<div class="person-office"><?php echo esc_html( $display_data['office'] ); ?></div><?php endif;
+					if ( ! empty( $display_data['object_url'] ) ) : ?><div class="person-title"><?php echo esc_html( $display_data['object_url'] ); ?></div><?php endif;
 				} ?>
 					<div class="personnel-category-tags"><?php the_category(' | '); ?></div>
 		</header>
-
-		<div class="article-summary">
-		<?php
-			// If a manual excerpt is available, display this. Otherwise, only the most basic information is needed.
-			if ( $post->post_excerpt ) {
-				echo get_the_excerpt();
-			}
-			?>
-		</div><!-- .article-summary -->
-	<?php else : ?>
 		<div class="article-body">
-			<?php the_content(); ?>
+			<?php get_template_part( 'articles/post', get_post_type() ) ?>
 		</div>
-	<?php endif; ?>
+	</div>
 
+	<div class="column two">
+
+			
+	</div><!--/column-->
+
+</section>
 </article>
+<?php endwhile;

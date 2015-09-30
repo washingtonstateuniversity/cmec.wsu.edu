@@ -1,7 +1,8 @@
 <?php
 
 // Global version tracker.
-
+// Add extensions of the University Center project model.
+include_once( __DIR__ . '/includes/cmec-uc-project.php' );
 include_once( 'includes/cmec-shortcodes.php' ); // Handle custom shortcodes for CMEC.
 
 add_action( 'wp_enqueue_scripts', 'cleantech_enqueue_scripts' );
